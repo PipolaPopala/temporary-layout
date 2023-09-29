@@ -56,7 +56,7 @@ html {
 
 .header__container {
     width: 100%;
-    height: 80px;
+    height: 72px;
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
@@ -102,6 +102,10 @@ html {
     font-weight: 700;
 }
 
+/* .nav__link:active {
+    color: #567AFF;
+} */
+
 .nav__link--active {
     color: #567AFF;
 }
@@ -116,7 +120,7 @@ html {
 
 .footer__container {
     width: 100%;
-    height: 72px;
+    height: 64px;
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
@@ -155,8 +159,8 @@ html {
 
 /* MAIN START*/
 
-.section-start__heading {
-    height: 400px;
+.heading {
+    height: calc((100vh - 180px) * .4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,8 +200,8 @@ html {
     color: var(--color-white);
 }
 
-.section-start__description {
-    height: 600px;
+.description {
+    height: calc((100vh - 180px) * .6);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -250,16 +254,18 @@ html {
 /* MAIN PASS HUMAN*/
 
 .section-pass-human {
-    height: 660px;
+    height: calc(100vh - 180px);
     background-image: url(../icons/clouds.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-pass-human__wrapper {
     width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,41 +361,42 @@ html {
 }
 
 
-/* MAIN PASS AVTO*/
+/* MAIN PASS AUTO*/
 
-.section-pass-avto {
-    height: 820px;
+.section-pass-auto {
+    height: calc(100vh - 180px);
     background-image: url(../icons/clouds.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
-.section-pass-avto__wrapper {
+.section-pass-auto__wrapper {
     width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 24px;
-    padding-top: 30px;
 }
 
-.section-pass-avto__title {
+.section-pass-auto__title {
     font-size: 36px;
     text-align: center;
     color: #3D4F9F;
     margin: 0;
 }
 
-.section-pass-avto__btn-wrapper-heading {
+.section-pass-auto__btn-wrapper-heading {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-pass-avto__btn-single {
+.section-pass-auto__btn-single {
     width: 160px;
     height: 50px;
     background-color: #567AFF;
@@ -397,7 +404,7 @@ html {
     filter: drop-shadow(0px 5px 15px #6480E8);
 }
 
-.section-pass-avto__btn-temporary {
+.section-pass-auto__btn-temporary {
     width: 160px;
     height: 50px;
     background-color: transparent;
@@ -406,7 +413,7 @@ html {
     box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
 }
 
-.section-pass-avto__form {
+.section-pass-auto__form {
     width: 520px;
     height: 540px;
     display: flex;
@@ -420,7 +427,7 @@ html {
     box-shadow: 0px 5px 50px 0px #F3F5FA;
 }
 
-.section-pass-avto__item-wrapper {
+.section-pass-auto__item-wrapper {
     width: 440px;
     height: 60px;
     border-radius: 20px;
@@ -429,7 +436,7 @@ html {
     display: flex;
 }
 
-.section-pass-avto__item {
+.section-pass-auto__item {
     width: 100%;
     font-size: 14px;
     display: flex;
@@ -437,24 +444,24 @@ html {
     justify-content: space-around;
 }
 
-.section-pass-avto__text {
+.section-pass-auto__text {
     color: #BCBCBC;
 }
 
-.section-pass-avto__input {
+.section-pass-auto__input {
     width: 100%;
     border: none;
     background-color: transparent;
     color: #565F82;
 }
 
-.section-pass-avto__btn-input {
+.section-pass-auto__btn-input {
     display: flex;
     justify-self: center;
     align-items: center;
 }
 
-.section-pass-avto__btn {
+.section-pass-auto__btn {
     width: 190px;
     height: 60px;
     background-color: var(--color-primary);
@@ -465,17 +472,15 @@ html {
 /* MAIN LOG IN */
 
 .section-log-in {
-    height: 660px;
+    height: calc(100vh - 180px);
     padding-top: 50px;
     background-image: url(../icons/clouds.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.section-log-in__wrapper {
-    width: 360px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-log-in__form {
@@ -514,7 +519,7 @@ html {
 /* MAIN PASS LIST */
 
 .section-pass-list {
-    height: 820px;
+    height: calc(100vh - 180px);
     background-color: var(--color-white);
     padding-top: 40px;
 }
@@ -658,7 +663,7 @@ html {
 /* MAIN EVENT LIST */
 
 .section-event-list {
-    height: 820px;
+    height: calc(100vh - 180px);
     background-color: var(--color-white);
     padding-top: 40px;
 }
