@@ -30,7 +30,7 @@
               <li class="nav__item"><a class="nav__link" href="pass_list.html">Пропуска</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Запросы</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-              <button class="nav__button btn" type="button"><a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a></button>
+              <a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a>
             </ul>
           </nav>
         </div>
@@ -42,10 +42,14 @@
 
           <div class="section-pass-auto__wrapper">
             <h1 class="section-pass-auto__title">Оформление пропуска для <br> автомобилей</h1>
-            <div class="section-pass-auto__btn-wrapper-heading">
-              <button class="section-pass-auto__btn-single btn" type="button">Разовый</button>
-              <button class="section-pass-auto__btn-temporary btn" type="button">Временный</button>
-            </div>
+            <!-- <div class="section-pass-auto__btn-wrapper-heading">
+              <button class="btn-single btn" type="button">Разовый</button>
+              <button class="btn-temporary btn" type="button">Временный</button>
+            </div> -->
+            <form class="form-choice-time">
+              <label class="label-time-btn btn"><input class="input-time-btn" type="radio" name="time-choice">Разовый</label>
+              <label class="label-time-btn btn"><input class="input-time-btn" type="radio" name="time-choice">Временный</label>
+            </form>
   
             <form class="section-pass-auto__form" action="">
               <div class="section-pass-auto__item-wrapper">
@@ -53,7 +57,7 @@
                   <p class="section-pass-auto__text">Адрес</p>
                   <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
                 </div>
-                <button class="section-pass-auto__btn-input btn" type="button"><img src="icons/arrow.svg" alt=""></button>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
               </div>
               <div class="section-pass-auto__item-wrapper">
                 <div class="section-pass-auto__item">
@@ -66,21 +70,21 @@
                   <p class="section-pass-auto__text">Марка автомобиля</p>
                   <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
                 </div>
-                <button class="section-pass-auto__btn-input btn" type="button"><img src="icons/arrow.svg" alt=""></button>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
               </div>
               <div class="section-pass-auto__item-wrapper">
                 <div class="section-pass-auto__item">
                   <p class="section-pass-auto__text">Тип транспорта</p>
                   <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
                 </div>
-                <button class="section-pass-auto__btn-input btn" type="button"><img src="icons/arrow.svg" alt=""></button>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
               </div>
               <div class="section-pass-auto__item-wrapper">
                 <div class="section-pass-auto__item">
                   <p class="section-pass-auto__text">Время визита</p>
                   <input class="section-pass-auto__input input" type="text" placeholder="Вводите здесь">
                 </div>
-                <button class="section-pass-auto__btn-input btn" type="button"><img src="icons/arrow.svg" alt=""></button>
+                <button class="section-pass-auto__btn-input btn btn-svg" type="button"><img src="icons/arrow.svg" alt=""></button>
               </div>
               <button class="section-pass-auto__btn btn" type="button">Получить <br> приглашение</button>
             </form>

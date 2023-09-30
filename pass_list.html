@@ -30,7 +30,7 @@
               <li class="nav__item"><a class="nav__link nav__link--active" href="pass_list.html">Пропуска</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Запросы</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-              <button class="nav__button btn" type="button"><a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a></button>
+              <a href="log_in.html"><img class="nav__img" src="icons/log_in.svg" alt=""></a>
             </ul>
           </nav>
         </div>
@@ -49,8 +49,10 @@
             <h1 class="section-pass-list__title section-pass-list__title--mb">Мои пропуска</h1>
             <div class="section-pass-list__filter section-pass-list__filter--mb">
               <p class="section-pass-list__filter-text">Фильтровать по:</p>
-              <button class="section-pass-list__filter-btn btn" type="button">Объекту</button>
-              <button class="section-pass-list__filter-btn btn" type="button">Типу</button>
+              <!-- <button class="section-pass-list__filter-btn btn" type="button">Объекту</button>
+              <button class="section-pass-list__filter-btn btn" type="button">Типу</button> -->
+              <label class="label-filter"><input class="input-filter" type="checkbox">Объекту</label>
+              <label class="label-filter"><input class="input-filter" type="checkbox">Типу</label>
             </div>
 
             <div class="section-pass-list__table">

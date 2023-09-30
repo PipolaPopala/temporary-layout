@@ -7,8 +7,10 @@
 :root {
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-body: #EBEBEB;
+    --color-bg: #EBEBEB;
     --color-primary: #4D6CE1;
+    --color-hover: #fae25a;
+    --color-active: #A0B4FF;
 }
 
 html {
@@ -22,6 +24,26 @@ html {
     font-size: 14px;
     border-radius: 5px;
     font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--color-hover);
+    filter: drop-shadow(0px 2px 10px var(--color-hover));
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+.btn-svg:hover {
+    background-color: transparent;
+}
+
+/* .btn:active {
+    background-color: var(--color-active);
+} */
+
+.input {
+    color: #565F82;
+    background-color: transparent;
 }
 
 .input:focus {
@@ -50,7 +72,7 @@ html {
 /* HEADER */
 
 .header {
-    background-color: var(--color-body);
+    background-color: var(--color-bg);
     border-bottom: 8px #DDDDDD solid;
 }
 
@@ -102,6 +124,11 @@ html {
     font-weight: 700;
 }
 
+.nav__link:hover {
+    color: var(--color-hover);
+    -webkit-text-stroke: 1px rgba(76, 88, 102, .5);;
+}
+
 /* .nav__link:active {
     color: #567AFF;
 } */
@@ -114,7 +141,7 @@ html {
 /* FOOTER */
 
 .footer__inner-top {
-    background-color: var(--color-body);
+    background-color: var(--color-bg);
     border-top: #DDDDDD 8px solid;
 }
 
@@ -232,11 +259,10 @@ html {
 
 .description__btn-wrapper {
     width: 190px;
+    height: 260px;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .description__btn-choice {
@@ -244,10 +270,11 @@ html {
     height: 60px;
     background-color: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+    box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
     text-decoration: none;
     text-align: center;
     padding: 20px 0;
+    border: 1px solid transparent;
 }
 
 
@@ -281,13 +308,13 @@ html {
     margin: 0;
 }
 
-.section-pass-human__btn-wrapper-heading {
+/* .section-pass-human__btn-wrapper-heading {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-pass-human__btn-single {
+.btn-single {
     width: 160px;
     height: 50px;
     background-color: #567AFF;
@@ -295,13 +322,40 @@ html {
     filter: drop-shadow(0px 5px 15px #6480E8);
 }
 
-.section-pass-human__btn-temporary {
+.btn-temporary {
     width: 160px;
     height: 50px;
     background-color: transparent;
     border: 1px #A0B4FF solid;
     color: #567AFF;
     box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+} */
+
+.form-choice-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-time-btn {
+    width: 160px;
+    background-color: transparent;
+    border: 1px #A0B4FF solid;
+    color: #567AFF;
+    box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+    text-align: center;
+    padding: 17px 0;
+}
+
+.label-time-btn:has(.input-time-btn:checked) {
+    background-color: #567AFF;
+    color: var(--color-white);
+    filter: drop-shadow(0px 5px 15px #6480E8);
+}
+
+.label-time-btn .input-time-btn {
+    width: 1px;
+    margin: 0px;
 }
 
 .section-pass-human__form {
@@ -323,7 +377,7 @@ html {
     height: 60px;
     border-radius: 20px;
     padding: 8px 20px;
-    background-color: var(--color-body);
+    background-color: var(--color-bg);
     display: flex;
 }
 
@@ -342,8 +396,6 @@ html {
 .section-pass-human__input {
     width: 100%;
     border: none;
-    background-color: transparent;
-    color: #565F82;
 }
 
 .section-pass-human__btn-input {
@@ -357,7 +409,7 @@ html {
     height: 60px;
     background-color: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+    box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
 }
 
 
@@ -390,13 +442,13 @@ html {
     margin: 0;
 }
 
-.section-pass-auto__btn-wrapper-heading {
+/* .section-pass-auto__btn-wrapper-heading {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-pass-auto__btn-single {
+.btn-single {
     width: 160px;
     height: 50px;
     background-color: #567AFF;
@@ -404,14 +456,14 @@ html {
     filter: drop-shadow(0px 5px 15px #6480E8);
 }
 
-.section-pass-auto__btn-temporary {
+.btn-temporary {
     width: 160px;
     height: 50px;
     background-color: transparent;
     border: 1px #A0B4FF solid;
     color: #567AFF;
     box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
-}
+} */
 
 .section-pass-auto__form {
     width: 520px;
@@ -432,7 +484,7 @@ html {
     height: 60px;
     border-radius: 20px;
     padding: 8px 20px;
-    background-color: var(--color-body);
+    background-color: var(--color-bg);
     display: flex;
 }
 
@@ -451,8 +503,6 @@ html {
 .section-pass-auto__input {
     width: 100%;
     border: none;
-    background-color: transparent;
-    color: #565F82;
 }
 
 .section-pass-auto__btn-input {
@@ -466,7 +516,7 @@ html {
     height: 60px;
     background-color: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+    box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
 }
 
 /* MAIN LOG IN */
@@ -500,7 +550,6 @@ html {
 .section-log-in__input {
     width: 280px;
     height: 40px;
-    background-color: transparent;
     border: none;
     font-size: 18px;
     border-bottom: 1px #D0CECE solid;
@@ -509,10 +558,9 @@ html {
 .section-log-in__btn {
     width: 280px;
     height: 60px;
-    background-color: #D9D9D9;
-    color: #565F82;
-    border: 1px #D0CECE solid;
-    box-shadow: 0px 5px 15px 0px rgba(116, 104, 255, 0.20);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
 }
 
 
@@ -724,6 +772,29 @@ html {
     color: #696969;
     border-radius: 60px;
     border: 1px solid #696969;
+}
+
+.label-filter {
+    width: 145px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+    border-radius: 60px;
+    border: 1px solid #696969;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.label-filter:has(.input-filter:checked) {
+    background-color: #567AFF;
+    color: var(--color-white);
+    filter: drop-shadow(0px 5px 15px #6480E8);
+    border: 1px solid transparent;
+}
+
+.label-filter .input-filter {
+    width: 1px;
+    margin: 0px;
 }
 
 .section-event-list__table {
