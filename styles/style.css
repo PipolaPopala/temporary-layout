@@ -638,11 +638,16 @@
     box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
 }
 
-.section-log-in__btn-sing {
+.section-log-in__btn-sign {
     width: 280px;
     height: 60px;
     background-color: var(--color-bg);
     box-shadow: 5px 5px 10px 0px rgba(75, 67, 165, 0.9);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid transparent;
+    position: relative;
 }
 
 
