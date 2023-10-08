@@ -22,10 +22,11 @@
     border-radius: 5px;
     font-weight: 700;
     color: var(--color-text);
+    transition: all .5s;
 }
 
 .btn:hover {
-    background-color: var(--color-hover);
+    background-color: var(--color-white);
     filter: drop-shadow(0px 2px 10px var(--color-hover));
     border: 1px solid transparent;
     box-shadow: none;
@@ -114,23 +115,13 @@
     justify-content: space-between;
 }
 
-.logo {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+.logo-link {
     width: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex; 
 }
 
-.logo__img {
-    height: 17px;
-}
-
-.logo__text {
-    text-align: center;
-    color: #4C5866;
-    text-decoration: none;
+.logo-img {
+    width: 200px;
 }
 
 .nav {
@@ -147,14 +138,18 @@
 }
 
 .nav__link {
+    padding: 10px;
     color: #4C5866;
     text-decoration: none;
     font-weight: 700;
+    transition: all .5s;
 }
 
 .nav__link:hover {
-    color: var(--color-hover);
-    -webkit-text-stroke: 1px rgba(76, 88, 102, .5);;
+    color: var(--color-white);
+    -webkit-text-shadow: 0px 0px 10px rgba(0,  0,  0, 0.5);
+    -moz-text-shadow: 0px 0px 10px rgba(0,  0,  0, 0.5);
+    text-shadow: 0px 0px 10px rgba(0,  0,  0, 0.5);
 }
 
 /* .nav__link:active {
@@ -235,9 +230,9 @@
 }
 
 .heading__btn-wrapper {
+    width: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .heading__btn-from-shablon {
@@ -287,7 +282,7 @@
 
 .description__btn-wrapper {
     width: 190px;
-    height: 260px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -388,7 +383,7 @@
 
 .section-pass-human__form {
     width: 520px;
-    height: 380px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,7 +490,7 @@
 
 .section-pass-auto__form {
     width: 520px;
-    height: 540px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -864,12 +859,13 @@
 .label-filter {
     width: 145px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     color: #696969;
     border-radius: 60px;
     border: 1px solid #696969;
     text-align: center;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .label-filter:has(.input-filter:checked) {
